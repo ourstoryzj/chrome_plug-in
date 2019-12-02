@@ -1,0 +1,55 @@
+<html>
+    <script src="http://raw.githack.com/ourstoryzj/hello-world/master/common.js"></script>
+<style>
+    #div {
+        width: 300px;
+        height: 250px;
+        background-color: gainsboro;
+        position: fixed;
+        bottom: -250px;
+        right: 0px;
+        transition: all 1.5s ease;
+    }
+
+    #close {
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        text-align: center;
+        line-height: 20px;
+        float: right;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    var div;
+    //window.onload = function () {
+        //div = document.getElementById("div");
+        //div.style.bottom = "0px"
+    //}
+    document.onreadystatechange=function(){
+    if(document.readyState =="complete"){
+          div = document.getElementById("div");
+        div.style.bottom = "0px"
+    }
+}
+    function closeWin() {
+        var close = document.getElementById("close");
+        if (close.innerText == "×") {
+            close.innerText = "√";
+            div.style.bottom = "-200px"
+        } else {
+            close.innerText = "×";
+            div.style.bottom = "0px"
+        }
+    }
+</script>
+
+<body>
+    <div id="div">
+        <div id="close" onclick="addCSS('123')">×</div>
+    </div>
+</body>
+
+</html>

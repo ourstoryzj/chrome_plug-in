@@ -1,0 +1,36 @@
+{
+  "//manifest_version": "manifest.json文件的版本号,默认是2",
+  "manifest_version": 2,
+  "//version": "插件版本",
+  "version": "1.0.1",
+  "name": "淘宝自动登录助手",
+  "description": "淘宝自动登录助手",
+  "//browser_action": "browser_action与page_action都用于响应页面,page action适用于插件仅针对少数页面的情况，browser action则主要适用于插件对大部分页面都有效的情况,不可同时存在",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "//permissions": "需要的权限,权限位置可以调换",
+  "permissions": [
+    "https://*/*"
+  ],
+  "//background": "用于加载js",
+  "background": {},
+  "//content_scripts": "用于加载js,matches:作用域;js:需要引用的js;run_at:加载到页面位置,document_end是加载到尾部;all_frames:所有框架都需要加载",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/jquery.js",
+        "js/common.js",
+        "js/showbox.js",
+        "js/taobao.js",
+        "js/taobao_login.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
