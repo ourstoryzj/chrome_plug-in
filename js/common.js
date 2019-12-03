@@ -2,8 +2,6 @@
 
 
 
-
-
 /*页面添加getClassName方法*/
 function getClassName(abc) {
     if (!document.getElementsByClassName) {
