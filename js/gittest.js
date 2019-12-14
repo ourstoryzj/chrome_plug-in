@@ -4,3 +4,4 @@ function alters()
     alert('');
     21
 }
+
