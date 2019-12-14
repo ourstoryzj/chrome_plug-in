@@ -1,5 +1,11 @@
+<!DOCTYPE html>
 <html>
-    <script src="http://raw.githack.com/ourstoryzj/hello-world/master/common.js"></script>
+
+<head>
+    <title>测试</title>
+</head>
+
+<script src="http://raw.githack.com/ourstoryzj/hello-world/master/common.js"></script>
 <style>
     #div {
         width: 300px;
@@ -25,15 +31,16 @@
 <script>
     var div;
     //window.onload = function () {
-        //div = document.getElementById("div");
-        //div.style.bottom = "0px"
+    //div = document.getElementById("div");
+    //div.style.bottom = "0px"
     //}
-    document.onreadystatechange=function(){
-    if(document.readyState =="complete"){
-          div = document.getElementById("div");
-        div.style.bottom = "0px"
+    document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+            div = document.getElementById("div");
+            div.style.bottom = "0px"
+        }
     }
-}
+
     function closeWin() {
         var close = document.getElementById("close");
         if (close.innerText == "×") {
