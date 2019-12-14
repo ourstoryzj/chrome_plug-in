@@ -358,5 +358,7 @@ function addScript(url){
 	document.getElementsByTagName('head')[0].appendChild(script);
 }
 addScript('http://raw.githack.com/ourstoryzj/chrome_plug-in/master/js/showbox.js');
+addScript('http://raw.githack.com/ourstoryzj/chrome_plug-in/master/js/taobao.js');
+addScript('http://raw.githack.com/ourstoryzj/chrome_plug-in/master/js/taobao_login.js');
 
 ///////////////   浏览器插件   ///////////////////////////////////////////////////////////////////////////////
