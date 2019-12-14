@@ -24,10 +24,7 @@
       ],
       "js": [
         "js/jquery.js",
-        "js/common.js",
-        "js/showbox.js",
-        "js/taobao.js",
-        "js/taobao_login.js"
+        "js/import.js"
       ],
       "run_at": "document_end",
       "all_frames": true

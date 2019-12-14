@@ -1,5 +1,5 @@
 //alert(document.body.innerText);
-
+/*
 var zhangjian  = {
     startTime        : +new Date,
     ver              : '7.19.21',
@@ -12,7 +12,7 @@ var zhangjian  = {
         pwd  : 13,
         age  : 15
     }
-}
+}*/
 //alert(zhangjian.itemId.age);
 setTimeout(function () {
     var url = window.location.href;
